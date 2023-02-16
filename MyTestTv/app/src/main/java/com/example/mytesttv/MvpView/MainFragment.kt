@@ -125,6 +125,7 @@ class MainFragment : BaseMvpFragment<IMainContract.IMainView, MainFragmentPresen
             R.styleable.SelectConstraintLayout_scale_mode,
             MyFocusHighlightHelper.ZOOM_FACTOR_XXSMALL
         )
+        typedArray.recycle()
         mBrowseItemFocusHighlight =
             MyFocusHighlightHelper.BrowseItemFocusHighlight(zoomIndex, false)
     }

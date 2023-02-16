@@ -23,6 +23,7 @@ public class AppInfoService {
     @Deprecated
     public List<AppInfo> getAppInfo() {
         List<AppInfo> appInfoList = new ArrayList<>();
+        PackageManager pm = context.getPackageManager();
         //TODO 获取appInfoList逻辑
         return appInfoList;
     }
